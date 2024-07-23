@@ -54,78 +54,78 @@ private int CalculateWin(params int[] positions)
         switch (i)
         {
             case 0: // Цреша
-                ако (count >= 4) total += 5;
-                else ако (count == 3) total += 2;
-                else ако (count == 2) total += 1;
+                if (count >= 4) total += 5;
+                else if (count == 3) total += 2;
+                else if (count == 2) total += 1;
                 break;
             case 1: // Лубеница
-                ако (count >= 4) total += 6;
-                else ако (count == 3) total += 1;
+                if (count >= 4) total += 6;
+                else if (count == 3) total += 1;
                 break;
             case 2: // Лимон
-                ако (count >= 3) total += 3;
+                if (count >= 3) total += 3;
                 break;
             case 3: // Бар
-                ако (count >= 4) total += 4;
-                else ако (count == 3) total += 1;
+                if (count >= 4) total += 4;
+                else if (count == 3) total += 1;
                 break;
             case 4: // Слива
-                ако (count >= 4) total += 5;
-                else ако (count == 3) total += 1;
+                if (count >= 4) total += 5;
+                else if (count == 3) total += 1;
                 break;
             case 5: // Срце
-                ако (count >= 4) total += 15;
-                else ако (count == 3) total += 5;
-                else ако (count == 2) total += 2;
+                if (count >= 4) total += 15;
+                else if (count == 3) total += 5;
+                else if (count == 2) total += 2;
                 break;
             case 6: // Детелина
-                ако (count >= 4) total += 15;
-                else ако (count == 3) total += 7;
-                else ако (count == 2) total += 2;
-                ако (count >= 3) AddLinePoints(i);
+                if (count >= 4) total += 15;
+                else if (count == 3) total += 7;
+                else if (count == 2) total += 2;
+                if (count >= 3) AddLinePoints(i);
                 break;
             case 7: // Портокал
-                ако (count >= 4) total += 7;
-                else ако (count == 3) total += 4;
-                else ако (count == 2) total += 1;
+                if (count >= 4) total += 7;
+                else if (count == 3) total += 4;
+                else if (count == 2) total += 1;
                 break;
             case 8: // Ѕвонче
-                ако (count >= 4) total += 18;
-                else ако (count == 3) total += 10;
-                else ако (count == 2) total += 3;
-                ако (count >= 3) AddLinePoints(i);
+                if (count >= 4) total += 18;
+                else if (count == 3) total += 10;
+                else if (count == 2) total += 3;
+                if (count >= 3) AddLinePoints(i);
                 break;
             case 9: // Монета
-                ако (count >= 4) total += 16;
-                else ако (count == 3) total += 8;
-                else ако (count == 2) total += 3;
-                ако (count >= 3) AddLinePoints(i);
+                if (count >= 4) total += 16;
+                else if (count == 3) total += 8;
+                else if (count == 2) total += 3;
+                if (count >= 3) AddLinePoints(i);
                 break;
             case 10: // Потковица
-                ако (count >= 4) total += 26;
-                else ако (count == 3) total += 10;
-                else ако (count == 2) total += 3;
-                ако (count >= 3) AddLinePoints(i);
+                if (count >= 4) total += 26;
+                else if (count == 3) total += 10;
+                else if (count == 2) total += 3;
+                if (count >= 3) AddLinePoints(i);
                 break;
             case 11: // Грозје
-                ако (count >= 4) total += 10;
-                else ако (count == 3) total += 3;
+                if (count >= 4) total += 10;
+                else if (count == 3) total += 3;
                 break;
             case 12: // Јаболко
-                ако (count >= 4) total += 6;
-                else ако (count == 3) total += 2;
+                if (count >= 4) total += 6;
+                else if (count == 3) total += 2;
                 break;
             case 13: // Дијамант
-                ако (count >= 4) total += 48;
-                else ако (count == 3) total += 15;
-                else ако (count == 2) total += 7;
-                ако (count >= 3) AddLinePoints(i);
+                if (count >= 4) total += 48;
+                else if (count == 3) total += 15;
+                else if (count == 2) total += 7;
+                if (count >= 3) AddLinePoints(i);
                 break;
         }
     }
 
     // Ако има голема добивка, овозможи цртање на линијата
-    ако (total > 0)
+    if (total > 0)
     {
         drawLine = true;
     }
